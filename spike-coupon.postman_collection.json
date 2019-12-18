@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "7331d3e5-2c9b-4ec9-b56f-ee48146d3ea3",
+		"name": "spike-coupon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "获取优惠券信息",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8081/getInfo?id=12312",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"getInfo"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "12312"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "申请优惠券。",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "12312",
+							"description": "优惠券id。",
+							"type": "text"
+						},
+						{
+							"key": "uid",
+							"value": "li4",
+							"description": "用户id。",
+							"type": "text"
+						},
+						{
+							"key": "quatity",
+							"value": "1",
+							"description": "申请量。",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/apply",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"apply"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

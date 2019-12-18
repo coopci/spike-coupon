@@ -1,0 +1,3 @@
+id=12312&uid=zhang3&quatity=1
+id=12312&uid=li4&quatity=1
+id=12312&uid=wang5&quatity=1
